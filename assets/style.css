@@ -535,3 +535,8 @@ body:has(.sticky-cta) .lp-footer { padding-bottom: calc(var(--sp-3) + var(--stic
 .edu-photo { margin: 0 0 var(--sp-4); }
 .lp .edu-photo img { aspect-ratio: 21 / 9; }
 @media (max-width: 767px) { .lp .edu-photo img { aspect-ratio: 16 / 10; } }
+
+/* 横長写真 */
+.lp .wide-band img { aspect-ratio: 21 / 9; object-position: center 30%; }
+@media (max-width: 767px) { .lp .wide-band img { aspect-ratio: 16 / 10; } }
+.lp .photo:not(.tall):not(.wide-band) img { aspect-ratio: 4 / 3; }
