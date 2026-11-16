@@ -540,3 +540,14 @@ body:has(.sticky-cta) .lp-footer { padding-bottom: calc(var(--sp-3) + var(--stic
 .lp .wide-band img { aspect-ratio: 21 / 9; object-position: center 30%; }
 @media (max-width: 767px) { .lp .wide-band img { aspect-ratio: 16 / 10; } }
 .lp .photo:not(.tall):not(.wide-band) img { aspect-ratio: 4 / 3; }
+
+/* 申込フォーム（受付中の講座のみ） */
+.apply-open { margin-block: var(--sp-4); padding: var(--sp-3) var(--sp-4); border: 1px solid var(--gold); }
+.apply-title { margin: 0 0 var(--sp-2); font-weight: 600; letter-spacing: 0.08em; }
+.apply-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-3); }
+.apply-list li, .apply-card { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-1) var(--sp-3); }
+.apply-name { font-weight: 600; } .apply-name .course-no { margin-right: 0.6em; }
+.apply-badge { display: inline-block; padding: 0.15em 0.7em; border: 1px solid var(--gold); color: var(--gold); font-size: var(--fs-xs); letter-spacing: 0.1em; }
+.apply-deadline { font-size: var(--fs-xs); }
+.apply-sub { margin: var(--sp-2) 0 0; font-size: var(--fs-xs); opacity: 0.8; }
+.apply-card { margin: var(--sp-3) 0; }
