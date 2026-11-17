@@ -556,3 +556,15 @@ body:has(.sticky-cta) .lp-footer { padding-bottom: calc(var(--sp-3) + var(--stic
 .wordmark-logo { display: block; height: 26px; width: auto; }
 .wordmark-footer .wordmark-logo, .site-footer .wordmark-logo, .lp-footer .wordmark-logo { height: 34px; }
 .wordmark-logo + .wordmark-ja { margin-top: 5px; }
+
+/* 準備中ボタン */
+.btn-disabled { opacity: 0.55; cursor: not-allowed; pointer-events: none; }
+.cta-unset { border: 0; padding: 0; }
+.cta-unset .cta-unset-note { margin-top: 0.6em; }
+.benefit-grid { display: grid; gap: var(--sp-3); grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: var(--sp-3); }
+.benefit-grid li { border-top: 1px solid var(--gold); padding-top: 1em; }
+.benefit-grid .role-en { display:block; }
+.benefit-grid .status-note { font-size: var(--fs-xs); color: var(--gold); letter-spacing: .1em; margin-top: .6em; }
+.lp-header .btn-disabled { white-space: nowrap; font-size: 0.7rem; padding-inline: 0.9em; }
+.lp-header .btn-disabled::after { display: none; }
+@media (max-width: 600px) { .hero h1 .hero-long { font-size: 0.8em; letter-spacing: 0.04em; } .lp-header .wordmark-ja { display: none; } }
